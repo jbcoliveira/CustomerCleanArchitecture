@@ -1,3 +1,6 @@
+using CustomerCleanArchitecture.Application;
+using CustomerCleanArchitecture.Infrastructure;
+
 namespace CustomerCleanArchitecture.Api
 {
     public class Program
@@ -12,6 +15,11 @@ namespace CustomerCleanArchitecture.Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+
+            builder.Services.ConfigureInfraStructure(builder.Configuration);
+            builder.Services.ConfigureApplication(builder.Configuration);
+
 
             var app = builder.Build();
 

@@ -13,16 +13,20 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CustomerCleanArchitecture.Application\CustomerCleanArchitecture.Application.csproj" />
     <ProjectReference Include="..\CustomerCleanArchitecture.Infrastructure\CustomerCleanArchitecture.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="SQLite\" />
   </ItemGroup>
 
 </Project>

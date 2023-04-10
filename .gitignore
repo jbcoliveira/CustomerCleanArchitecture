@@ -349,3 +349,5 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 /src/CustomerCleanArchitecture.Api/SQLite/Mentoria.sqlite
+/src/CustomerCleanArchitecture.Api/SQLite/Mentoria.sqlite-wal
+/src/CustomerCleanArchitecture.Api/SQLite/Mentoria.sqlite-shm

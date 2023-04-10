@@ -16,10 +16,8 @@ namespace CustomerCleanArchitecture.Api
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-
             builder.Services.ConfigureInfraStructure(builder.Configuration);
             builder.Services.ConfigureApplication(builder.Configuration);
-
 
             var app = builder.Build();
 
@@ -33,7 +31,6 @@ namespace CustomerCleanArchitecture.Api
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 

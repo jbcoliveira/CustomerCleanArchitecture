@@ -11,11 +11,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CustomerCleanArchitecture.Application\CustomerCleanArchitecture.Application.csproj" />
     <ProjectReference Include="..\CustomerCleanArchitecture.Domain\CustomerCleanArchitecture.Domain.csproj" />
   </ItemGroup>
 

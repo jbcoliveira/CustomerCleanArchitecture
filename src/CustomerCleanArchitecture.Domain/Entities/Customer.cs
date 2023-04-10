@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CustomerCleanArchitecture.Domain.Entities
 {
@@ -11,9 +6,10 @@ namespace CustomerCleanArchitecture.Domain.Entities
     {
         [Column(Order = 0)]
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string SurName { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
+
+        public string? FirstName { get; set; }
+        public string? SurName { get; set; }
+        public string? Email { get; set; }
+        public string? Password { get; set; }
     }
 }
